@@ -1,0 +1,20 @@
+@media (max-width: 575px){
+    
+    .imagenproductodestacado{
+        width: 400px;
+        height: 450px;
+    }
+
+.contenedor2{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(161, 130, 130);
+    text-align: center;
+   display: block;
+}
+  
+
+
+}
+
+

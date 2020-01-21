@@ -59,9 +59,107 @@ header nav div ul li a {
 .portada img{
     width: auto;
     height: 400px;
-   
     margin-left: 100px;
 }
 
 
+.producto-elemento{
+   
+    text-align: center;
+    padding-top: 20px;
+    border: 2px solid red;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5%;
+    background-color: rgb(221, 157, 171);
 
+  
+}
+
+.imagenproductodestacado{
+   
+    width: 230px;
+    height: 250px;
+    margin-bottom: 3px;
+    
+
+}
+
+ .subrayado{
+ color: gray;
+ text-decoration: line-through;
+ font-size: 20px;
+}
+
+ .sinsubrayado{
+ color: blue;
+ font-size: 20px;
+
+}
+
+.textoproducto{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.contenedor{
+    background-color: rgb(161, 130, 130);
+    margin-top: 0;
+}
+
+.contenedor2{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(161, 130, 130);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor2 h2{
+    margin: 0 ;
+    color: blue;
+}
+
+.contenedor2 h2{
+    margin: 0 auto;
+}
+
+.contacto{
+    margin: 0 auto;
+}
+
+.contenedor2 a{
+    color: blue;
+}
+.contenedor2 a:hover{
+    text-decoration: none;
+}
+
+.textAtencion{
+    color: black;
+}
+
+.diferencia{
+    text-align: center;
+}
+
+.padre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hijo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../img/portada1.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
