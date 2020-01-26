@@ -1,3 +1,5 @@
+
+/*--------Aquí empieza la sección de productios destacados---------*/
 .contenedor{
     padding: 30px;
     background-color: $color-fondo-destacados;
@@ -9,9 +11,10 @@
     text-align: center;
     background-color: $color-fondo-contenedor2;
     color:white;
+
+    h2{
+        margin: 0;
+    }
   
 }
 
-.contenedor2 h2{
-    margin: 0;
-}

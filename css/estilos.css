@@ -2,41 +2,67 @@
 /*........Colors...........*/
 /*Aquí empieza la seccion de estilos de portada*/
 .portada {
+  /*Aquí empieza mi animación*/
   background-color: #b61212;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 3s;
+  /*Aquí termina mi animación*/
+  /* background-color: $color-portada;*/
   color: white;
 }
-
 .portada img {
-  margin: 0;
   padding: 0;
+  margin: 0;
   width: 80%;
 }
+.portada .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.portada .grid-container h1 {
+  font-size: 24px;
+}
 
+/* Safari 4.0 - 8.0 */
+/* Standard syntax */
+@keyframes example {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #b61212;
+  }
+}
 .centrarImagen {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.portada .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.portada .grid-container h1 {
-  font-size: 24px;
-}
-
 /*Aquí empiezan los estilos de mis productos*/
 .imagenproductodestacado {
   width: 100%;
   height: 250px;
+  /* Safari */
+  transition: transform 0.5s;
 }
 
+.imagenproductodestacado:hover {
+  /* IE 9 */
+  /* Safari prior 9.0 */
+  transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+  /* Standard syntax */
+}
+
+/*--------Aquí empieza la sección de productios destacados---------*/
 .contenedor {
   padding: 30px;
   background-color: #333b58;
@@ -49,7 +75,6 @@
   background-color: #2c5252;
   color: white;
 }
-
 .contenedor2 h2 {
   margin: 0;
 }
@@ -70,25 +95,23 @@ footer {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 footer a {
   color: white;
 }
-
 footer a:hover {
   color: white;
-  list-style: none;
+  text-decoration: none;
 }
 
 /*Esta parte le da estilos a todo el documento html*/
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 /*Aquí empiezan los media queries*/

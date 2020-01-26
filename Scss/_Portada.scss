@@ -2,15 +2,52 @@
 
 
 .portada{
-    background-color: $color-portada;
+
+    /*Aquí empieza mi animación*/
+ 
+    background-color: $color-portada;;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;
+
+
+    /*Aquí termina mi animación*/
+
+
+   /* background-color: $color-portada;*/
     color: white;
+    img{
+        @include cero;
+        width: 80%;
+
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        @include cero;
+        text-align: center;
+        h1{
+            font-size: 24px;
+        }
+
+    }
 }
 
-.portada img{
-    margin: 0;
-    padding: 0;
-    width: 80%;
-}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: black;}
+    to {background-color: $color-portada;;}
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+    from {background-color:black;}
+    to {background-color: $color-portada;;}
+  }
+
 
 .centrarImagen{
     display: flex;
@@ -18,15 +55,5 @@
     align-items: center;
 }
 
-.portada .grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
 
-.portada .grid-container h1{
-    font-size: 24px;
-}
+

@@ -6,13 +6,17 @@ footer{
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
+    a{
+        color: white;
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+
+
+    }
+
+
+
 }
 
-footer a{
-    color: white;
-}
-
-footer a:hover{
-    color: white;
-    list-style: none;
-}
