@@ -1,165 +1,108 @@
-header nav div ul li a {
-    text-align: right;
-    
+@charset "UTF-8";
+/*........Colors...........*/
+/*Aquí empieza la seccion de estilos de portada*/
+.portada {
+  background-color: #b61212;
+  color: white;
 }
 
-.portada{
-    background-color: rgb(182, 30, 30);
-    min-height: 400px;
+.portada img {
+  margin: 0;
+  padding: 0;
+  width: 80%;
 }
 
-.portada .grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.centrarImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.item1{
-    grid-column: 1/2;
-    grid-row: 1/2;
+.portada .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.item2{
-    grid-column: 2/3;
-    grid-row: 2/3;
+.portada .grid-container h1 {
+  font-size: 24px;
 }
 
-.item3{
-    grid-column: 1/2;
-    grid-row: 2/3;
+/*Aquí empiezan los estilos de mis productos*/
+.imagenproductodestacado {
+  width: 100%;
+  height: 250px;
 }
 
-.item4{
-    grid-column: 2/3;
-    grid-row: 1/2;
+.contenedor {
+  padding: 30px;
+  background-color: #333b58;
+  color: white;
+  text-align: center;
 }
 
-.portada i{
-    color: white;
-    width: 50px;
-   
+.contenedor2 {
+  text-align: center;
+  background-color: #2c5252;
+  color: white;
 }
 
-.item1 .item2 .item3 .item4{
-    display:block;
+.contenedor2 h2 {
+  margin: 0;
 }
 
-.portada h1{
-    font-size: 20px;
+.sobreNosotros {
+  background-color: #2a3b39;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.grid-container{
-    padding-top: 15px;
-    text-align: center;
-    color: white;
-    margin: 0 auto;
-    margin-right: 50px;
+/*Aquí empiezan los estilos del footer*/
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.portada img{
-    width: auto;
-    height: 400px;
-    margin-left: 100px;
+footer a {
+  color: white;
 }
 
-
-.producto-elemento{
-   
-    text-align: center;
-    padding-top: 20px;
-    border: 2px solid red;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5%;
-    background-color: rgb(221, 157, 171);
-
-  
+footer a:hover {
+  color: white;
+  list-style: none;
 }
 
-.imagenproductodestacado{
-   
-    width: 230px;
-    height: 250px;
-    margin-bottom: 3px;
-    
-
+/*Esta parte le da estilos a todo el documento html*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
- .subrayado{
- color: gray;
- text-decoration: line-through;
- font-size: 20px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
- .sinsubrayado{
- color: blue;
- font-size: 20px;
-
+/*Aquí empiezan los media queries*/
+@media (max-width: 575px) {
+  .imagenproductodestacado {
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    max-height: 150px;
+  }
 }
-
-.textoproducto{
-    display: flex;
-    justify-content: space-around;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-.contenedor{
-    background-color: rgb(161, 130, 130);
-    margin-top: 0;
-}
-
-.contenedor2{
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: rgb(161, 130, 130);
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contenedor2 h2{
-    margin: 0 ;
-    color: blue;
-}
-
-.contenedor2 h2{
-    margin: 0 auto;
-}
-
-.contacto{
-    margin: 0 auto;
-}
-
-.contenedor2 a{
-    color: blue;
-}
-.contenedor2 a:hover{
-    text-decoration: none;
-}
-
-.textAtencion{
-    color: black;
-}
-
-.diferencia{
-    text-align: center;
-}
-
-.padre{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.hijo{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-image: url('../img/portada1.jpg');
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
+@media (min-width: 992px) {
+  .imagenproductodestacado {
+    height: 200px;
+    max-width: 85%;
+  }
 }

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Document</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon"  href="img/icono.ico">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/media.css">
+  
 </head>
 <body>
     
@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-lg  navbar-dark bg-dark pb-1 pt-1">
 
     <!--Esta parte es para agregar el ícono de nuestra empresa-->
-    <a class="navbar-brand pb-0 pt-0" href="#"><img src="img/imagenicono.jpg" width="15%"></a>
+    <a class="navbar-brand p-0 m-0" href="#"><img src="img/imagenicono.jpg" width="15%"></a>
     <!--Aquí termina el ícono de nuestra empresa-->
 
     <!--Este botón es el que aparece en version telefono-->
@@ -31,10 +31,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio</a>
+          <a class="nav-link" href="index.html">Inicio</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Productos</a>
+            <a class="nav-link" href="catalogo.html">Productos</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">Preguntas Frecuentes</a>
@@ -48,134 +48,157 @@
     </div>
   </nav>
 </header>
-  <!--Aquí termina mi header diseñado con bootstrap-->
+ <!--Aquí termina mi header diseñado con bootstrap-->
+
 
 
  <!--Aquí inicia la sección de portada-->
-<section class="portada">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6"><img src="img/portada2.png"></div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
-                <div class="grid-container">
-                    <div class="item1"><i class="fa fa-user-secret fa-4x" aria-hidden="true" width="50px"></i><h1>PAQUETE DISCRETO:</h1><p>Discresión, nadie sabrá lo que has comprado</p></div>
-                    <div class="item2"><i class="fa fa-money fa-4x" aria-hidden="true"></i><h1>PAGO CONTRA ENTREGA:</h1><p>Pagas hasta recibir tu producto, cero riezgos</p></div>
-                    <div class="item3"><i class="fa fa-truck fa-4x" aria-hidden="true"></i><h1>ENVÍO GRATIS:</h1><p>Envíos gratis para todos los productos</p></div>
-                    <div class="item4"><i class="fa fa-paper-plane-o fa-4x" aria-hidden="true"></i><h1>COBERTURA NACIONAL:</h1><p>Enviamos a todo el país.</p></div>
-                </div>
-            </div>
-        </div>
-    </div>
+ <section class="portada">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-6 centrarImagen"><img src="img/portada2.png"></div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-6 pt-5">
+              <div class="grid-container">
+                  <div class="item1"><i class="fa fa-user-secret fa-4x" aria-hidden="true" width="50px"></i><h1>PAQUETE DISCRETO:</h1><p>Discresión, nadie sabrá lo que has comprado</p></div>
+                  <div class="item2"><i class="fa fa-money fa-4x" aria-hidden="true"></i><h1>PAGO CONTRA ENTREGA:</h1><p>Pagas hasta recibir tu producto, cero riezgos</p></div>
+                  <div class="item3"><i class="fa fa-truck fa-4x" aria-hidden="true"></i><h1>ENVÍO GRATIS:</h1><p>Envíos gratis para todos los productos</p></div>
+                  <div class="item4"><i class="fa fa-paper-plane-o fa-4x" aria-hidden="true"></i><h1>COBERTURA NACIONAL:</h1><p>Entrega a domicilio a todo el país.</p></div>
+
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
 <!--Aquí termina la sección de portada-->
 
 
 
+
 <!--Aquí inicia la sección de productos destacados-->
 <section class="descatados">
-    <div class="contenedor2"><h2>Productos Destacados</h2><h2 class="textAtencion">Atención al cliente:</h2><a href=""><h2 class="contact">41296600</h2></a></div>
-    <div class="container-fluid contenedor">
-    <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-            <!--Producto-->
-            <div class="producto-elemento">
-                <h4>Este es un Título</h4>
-                <img src="img/portada1.jpg" class="imagenproductodestacado">
-              <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip" >
-                <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled >Oferta</button>
-              </span>
-              <div class="textoproducto">
-                  <p> Antes: </p>
-                <p class="subrayado"> Q550  </p>
-                 <p> Ahora: </p>
-                 <p class="sinsubrayado"> Q320 </p>
-              </div>
+  <div class="contenedor2"><h2>Productos Destacados</h2></div>
+  <div class="container-fluid">
+  <div class="row  contenedor">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+          <!--Producto-->
+          <div class="producto-elemento">
+              <h4>Este es un Título</h4>
+              <img src="img/producto2.jpg" class="imagenproductodestacado">
               
-            </div>
-            <!--Producto-->
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip" >
+              <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled >Oferta</button>
+            </span>
+            <div class="textoproducto">
+              <p> Q350.00 </p>
+         
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
-            <div class="producto-elemento">
-                <h4>Este es un Título</h4>
-                <img src="img/portada1.jpg" class="imagenproductodestacado">
-              <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip" >
-                <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled >Oferta</button>
-              </span>
-              <div class="textoproducto">
-                  <p> Antes: </p>
-                <p class="subrayado"> Q550  </p>
-                 <p> Ahora: </p>
-                 <p class="sinsubrayado"> Q320 </p>
-              </div>
-              
-            </div>
-            <!--Producto-->
+            
+          </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
-            <div class="producto-elemento">
-                <h4>Este es un Título</h4>
-                <img src="img/portada1.jpg" class="imagenproductodestacado">
-              <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip" >
-                <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled >Oferta</button>
-              </span>
-              <div class="textoproducto">
-                  <p> Antes: </p>
-                <p class="subrayado"> Q550  </p>
-                 <p> Ahora: </p>
-                 <p class="sinsubrayado"> Q320 </p>
-              </div>
-              
+          <!--Producto-->
+     
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+          <div class="producto-elemento">
+              <h4>Este es un Título</h4>
+              <img src="img/producto.jpg" class="imagenproductodestacado">
+   
+              <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled >Oferta</button>
+          
+            <div class="textoproducto">
+                <p> Q350.00 </p>
+            
             </div>
-            <!--Producto-->
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
-            <div class="producto-elemento">
-                <h4>Este es un Título</h4>
-                <img src="img/portada1.jpg" class="imagenproductodestacado">
-              <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip" >
-                <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled >Oferta</button>
-              </span>
-              <div class="textoproducto">
-                  <p> Antes: </p>
-                <p class="subrayado"> Q550  </p>
-                 <p> Ahora: </p>
-                 <p class="sinsubrayado"> Q320 </p>
-              </div>
-              
-            </div>
-            <!--Producto-->
-        </div>
-    </div>
-    </div>
+            
+          </div>
+          <!--Producto-->
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+          <div class="producto-elemento">
+              <h4>Este es un Título</h4>
+              <img src="img/portada1.jpg" class="imagenproductodestacado">
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip" >
+              <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled >Oferta</button>
+            </span>
+            <div class="textoproducto">
+              <p> Q350.00 </p>
+          
+          </div>
+            
+          </div>
+          <!--Producto-->
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+          <div class="producto-elemento">
+              <h4>Este es un Título</h4>
+              <img src="img/producto.jpg" class="imagenproductodestacado">
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip" >
+              <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled >Oferta</button>
+            </span>
+            <div class="textoproducto">
+              <p> Q350.00 </p>
+          
+          </div>
+            
+          </div>
+          <!--Producto-->
+      </div>
+  </div>
+  </div>
 </section>
 <!--Aquí termina la sección de productos destacados-->
 
-<!--Aquí empieza el área de Quienes somos y categorías-->
+
+<!--Aquí empieza la sección sobre nosotros-->
+
 <section class="nosotros">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 diferencia"><h3>Lo que nos Diferencia</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, porro reprehenderit. Voluptatem placeat repellendus in quidem fugit at excepturi. Adipisci esse nobis beatae, in cumque laudantium animi aspernatur! Culpa, sit?</p></div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 padre">
-             
-                    <div class="hijo">
-                      
-                    </div>
-                    <div class="hijo">
-                    
-                    </div>
-                    <div class="hijo">
-                       
-                    </div>
-                
-            </div>
-        </div>
+
+  <div class="container-fluid sobreNosotros">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 ">
+       <h3>One of three columns</h3> 
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis aliquid ex, architecto ab tempora dicta eius error possimus illum eveniet natus necessitatibus laudantium ut incidunt suscipit dignissimos earum similique sequi.<br></p>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 ">
+        <h3>One of three columns</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero alias suscipit deserunt, distinctio atque, quae pariatur illum, blanditiis neque dolore doloremque dignissimos et quo velit. Quod eum quas blanditiis?<br></p>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+        <h3>One of three columns</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim hic deleniti aperiam impedit omnis placeat nobis eveniet, perferendis reprehenderit vel, libero modi atque repudiandae odio saepe accusantium quos a?<br></p>
+      </div>
     </div>
+  </div>
+
+
 </section>
+
+
+<!--Aquí termina la sección sobre nosotros-->
+
+
+<!--Aquí empieza el footer-->
+
+<footer>
+  <div class="container-fluid"> 
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6"><a href="">Preguntas Frecuentes</a></div>
+      <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">© Todos los Derechos Reservados</div>
+    </div>
+  
+  </div>
+  </footer>
+  
+  <!--Aquí termina el footer-->
+
+ 
+
 
 <!--Aquí estoy colocando el código jquery para bootstrap-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!--En esta parte estoy finalizando el código para bootstrap-->
+
+
 </body>
 </html>

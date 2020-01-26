@@ -1,0 +1,32 @@
+/*Aquí empieza la seccion de estilos de portada*/
+
+
+.portada{
+    background-color: $color-portada;
+    color: white;
+}
+
+.portada img{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+.centrarImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.portada .grid-container h1{
+    font-size: 24px;
+}
