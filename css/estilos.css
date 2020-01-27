@@ -79,6 +79,13 @@
   margin: 0;
 }
 
+/*------Aquí empieza la sección de ofertas----*/
+.oferta {
+  background-color: #19194b;
+  color: white;
+  text-align: center;
+}
+
 .sobreNosotros {
   background-color: #2a3b39;
   color: white;
